@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bowie Hip Sync</title>
+
+</head>
+
+<body >
+
+<div style="height:800px; width:480px; padding:0px; background:url(./img/bg.jpg) no-repeat ">
+<img src="img/header.jpg"/ alt ="Bowie HipSync">
+<a href="http://s-j.io/hipsync/bowie/play.html"> <img src="img/play.jpg"/> </a><br/><br/>
+<a href="http://s-j.io/hipsync/bowie/rules.html"> <img src="img/rules.jpg"/> </a>
+<div style="height:600px; width:479px; padding:0px;"></div>
+<br/>
+<br/>
+<br/>
+<DIV  style="color:red;margin-left:30px;">
+<script>
+var track= Math.floor((Math.random() * 4) + 1);
+//alert(track);
+var trackurl = "1minBowie/track"+track+".mp3";
+//alert(trackurl);
+document.write("<audio src=\""+trackurl+"\"controls ></audio>");
+//document.write("the track will be "+trackurl);
+</script>
+</DIV>
+<br/>
+<div >
+<h1 style="color:red;margin-left:30px; ">
+<script>
+document.write("<a href=\"http://s-j.io/hipsync/bowie/"+track+".html\"> REVEAL </a>;");
+</script>
+</h1>
+</div>
+</div>
+</body>
+
+</html>
