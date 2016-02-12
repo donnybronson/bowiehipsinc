@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bowie HipSync</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-player.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  <div class="container"  >
+  <div class="row" > 
+		<div class="col-xs-12 "> 
+			<a href="http://s-j.io/bowie"><img class="img-responsive" src="./img2/header.jpg" alt="Bowie HipSync"/></a>
+		</div>
+	</div>
+	<div class="row" > 
+		<div class="col-xs-12"> <img class="img-responsive" src="./img2/flash.jpg" alt="zowie"></div>
+	</div>
+	<div class="row"  ">
+		<div class="col-xs-12">
+			<script>
+				var track= Math.floor((Math.random() * 4) + 1);
+				
+				var trackurl = "1minBowie/track"+track+".mp3";
+				
+				//document.write("<audio  src=\""+trackurl+"\"controls ></audio>");
+				//document.write("the track will be "+trackurl);
+				document.write("<audio id=\"bowie\"  src=\""+trackurl+"\" ></audio>");
+  				function play(){
+       				var audio = document.getElementById("bowie");
+       				audio.play();
+           		}
+           		var audioT = document.getElementById("bowie");
+           		audioT.addEventListener('ended', reveal);
+           		function reveal(){
+           		//go to
+           		window.location.href = "http://s-j.io/hipsync/bowie/bs-"+track+".html"
+           		}
+  			 </script>
+
+<!--<input type="button" style="width:203px; height:70px; background-img: url(img2/dance.jpg) no-repeat;"  onclick="play()">-->
+<button onclick="play()" style="background-color:#fff; border:0px" ><img class="img-responsive" src="img2/dance.jpg" alt="DANCE" ></button> 
+			<!--
+			<div class="audio-player-controls">
+   			 	<span class="audio-player-progress">
+      				<span class="audio-player-progress-bar"></span>
+    			</span>
+    			<span class="audio-player-button-wrappers">
+      				<a role="button" class="audio-player-button small icon-backward"></a>
+      				<a role="button" class="audio-player-button audio-player-place-pause-button icon-play"></a>
+      				<a role="button" class="audio-player-button small icon-forward"></a>
+    			</span>
+  			</div>
+  			-->
+		</div>
+	</div>
+	<br/>
+	<div > 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//raw.github.com/fryn/html5slider/master/html5slider.js"></script>
+	<script src="js/bootstrap-player.js"></script>
+  </body>
+</html>
